@@ -1,0 +1,233 @@
+body {
+	background-color: pink;
+	color: #BBBBFF;
+	font-family: "courier new";
+	font-size: 12px;
+
+	}
+
+h1{
+	color: #666699;
+	font-family: "courier new";
+	font-weight: bolder;
+	font-size: 42px;
+	padding-top: 4px;
+    	padding-right: 10px;
+    	padding-bottom: 4px;
+   	padding-left: 20px;
+ }
+
+h2{
+	border-radius: 10px;
+	border-style: ridge;
+	border-top: 20px;
+	border-color: #663333;
+	background-color: #090000;
+	color: #CCCC00;
+	font-family: "courier new";
+	font-weight: bolder;
+	font-size: 36px;
+	padding-top: 1px;
+    	padding-right: 10px;
+    	padding-bottom: 1px;
+   	padding-left: 10px;
+	width: 296px;
+ }
+
+p{
+	color: #BBBBFF;
+	font-family: "courier new";
+	font-size: 16px;
+	padding-top: 3px;
+  padding-right: 8px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+	margin: 10px;
+	text-align: justify;
+ }
+ .tech {color: #FFCCCC;}
+ .lang {color: #CDCDFF;}
+ .soft {color: #BBBBBB;}
+ .os   {color: #CDFFCD;}
+.comp {font-size: 24px;}
+.cour {font-style: italic;}
+.pass {
+	text-align: center;
+	font-size: 11px;
+}
+
+code {
+
+ }
+
+hr {width: 25%;}
+
+button {
+	position: relative;
+	z-index: 1;
+	background-color: #311;
+	border-radius: 4px;
+	border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+	text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+	transition-duration: 0.3s;
+	}
+	button:hover {
+  background-color: white;
+  color: #131;
+}
+
+div.skillz, div.exped, div.hobby {
+
+  width: 38%;
+ 	color: #BBBBFF;
+ 	font-family: "Simsun";
+ 	font-weight: bolder;
+ 	font-size: 18px;
+ 	text-align: center;
+ 	position: static;
+  margin: auto;
+	margin-bottom: 490px;
+	margin-top: 220px;
+ 	}
+	div.hobby ul.sign-list li {
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		line-height: 48px;
+		font-size: 14px;
+		color: #EEE;
+		width: 100px;
+		height: 50px;
+		border-style: double;
+		border-color: black;
+		border-radius: 10px;
+	}
+
+div.foot {
+	background-color: #FF69BB;
+	position: fixed;
+	z-index: 1;
+	min-width: 296px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0px;
+	padding-right: 100px;
+	border-style: dashed;
+	border-width: thin;
+	border-bottom: 15px;
+	border-radius: 15px 15px 0px 0px;
+	}
+	div.foot p {
+		color: #000;
+		font-weight: bold;
+		}
+	div.foot a:link, a:visited {
+		color: #500;
+		text-decoration: none; }
+	div.foot a:hover,a:active { color: #FFF }
+
+div#pic {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+  bottom: 5%;
+  right: 7%;
+	}
+	div#pic IMG{border-radius: 50px;}
+
+div#topnav{
+	background-color: #FF1493;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0px;
+	height: 1%;
+	width: 100%;
+	min-width: 296px;
+	border-style: dashed;
+	border-width: thin;
+	border-radius: 0px 0px 15px 15px;
+}
+
+div#grad-back {
+	z-index: -1;
+  background-image:
+		linear-gradient(to bottom right, rgba(0,0,0,0), rgba(255,255,255,1));
+}
+div#grad-front {
+	background-image:
+		linear-gradient(to top left, rgba(255,255,255,1), rgba(0,0,0,0), rgba(255,255,255,1));
+}
+
+div.steam {
+	top: 0; left: 0;
+	position: fixed;
+	height: 130%;
+	width: 130%;
+}
+
+ #death { background-image: linear-gradient(#FFF,#000);}
+ #music { background-image: linear-gradient(#039,#0B6);}
+ #anima { background-image: linear-gradient(#DD0,#E00);}
+ #steam { background-image: linear-gradient(#622,#AA0);}
+ #vgame { background-image: linear-gradient(#00B,#666);}
+
+ul#horizontal-list {
+	min-width: 296px;
+	list-style: none;
+	padding-top: 0px;
+	padding-inline-start: 0px;
+  align-content: center;
+	}
+	ul#horizontal-list li {
+		display: inline;
+    border-radius: 20px;
+    background: url(item.jpg);
+    background-position: top-left;
+    background-repeat: repeat;
+    margin: 2px;
+    border-top: 20px;
+    padding: 10px;
+    line-height: 50px;
+    width: 150px;
+    height: 100px;
+	}
+
+ul.sign-list {
+		min-width: 296px;
+		list-style: none;
+		padding-top: 0px;
+		padding-inline-start: 0px;
+		margin: auto;
+		}
+		ul.sign-list li {
+			display: inline-block;
+	    border-radius: 5px;
+	    background: url(item.jpg);
+	    background-position: top left;
+	    background-repeat: repeat;
+	    margin: 2px;
+	    border-top: 20px;
+	    padding: 1px;
+	    line-height: 10px;
+	    width: 300px;
+	    height: 100px;
+		}
+		ul.sign-list li.cut {
+			display: none;
+		}
+		ul.sign-list li p {color: #99EE99;}
+		ul.sign-list li.cut p {color: #EE9999;}
+
+ul.info {
+		min-width: 296px;
+		list-style: none;
+		padding-right: 20px;
+		text-align: center;
+		}
+		ul.info li {display: inline-block;}
