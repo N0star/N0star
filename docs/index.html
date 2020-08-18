@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta charset="utf-8"/>
+    <title>HTML page</title>
+    <link rel="stylesheet" href="styl.css"/>
+
+    <script id="show_hidden">
+      function myFunction() {
+        var x = document.getElementsByClassName("cut");
+        for (i = 0; i < x.length; i++) {
+          if (x[i].style.display === "block") {
+            x[i].style.display = "none";
+          } else {
+            x[i].style.display = "block";
+          } }
+      }
+    </script>
+  </head>
+  <body bgcolor="pink">
+
+    <div class="skillz">
+      <center><h2>♦ Skill$et ♦</h2></center>
+      <ul id="horizontal-list">
+        <li class="tech"> MySQL</li>
+        <li class="tech"> HTML</li>
+        <li class="tech"> CSS</li>
+        <li class="tech"> GitHub</li>
+        <li class="tech"> LaTeX</li>
+        <li class="lang"> Bascom</li>
+        <li class="lang"> C</li>
+        <li class="lang"> C++</li>
+        <li class="lang"> Java</li>
+        <li class="lang"> Python</li>
+        <li class="lang"> Ruby</li>
+        <li class="lang"> R</li>
+        <li class="lang"> JavaScript</li>
+        <li class="lang"> GML</li>
+        <li class="soft" title="like GIMP or Clip Studio Paint"> Graphics&nbspSoftware</li>
+        <li class="soft" title="MS Office, Open Office, etc."> Office&nbspSoftware</li>
+      </ul>
+      <hr class="skillz" />
+      <ul id="horizontal-list">
+        <li class="os"> MS Windows</li>
+        <li class="os"> GNU/Linux</li>
+      </ul><hr class="skillz" />
+      <ul id="horizontal-list">
+        <li class="lang"> English</li>
+        <li class="lang"> Polski</li>
+        <li class="lang"> Руский</li>
+        <li class="lang"> Español</li>
+      </ul>
+    </div>
+    <div class="exped">
+      <center><h2>♥ Past Jobs ♥</h2>
+      <ul class="sign-list" id="jobs">
+        <li>
+          <p class="comp">@Kerber Group</p>
+          <p class="pos">as an intern</p>
+          <p class="date">in September, 2017.</p>
+        </li><li>
+          <p class="comp">@Kino Mikro</p>
+          <p class="pos">multitansking position</p>
+          <p class="date">temporarily in '15,'19,'20.</p>
+          </li>
+      </ul></center><br/>
+      <center><h2>♣ Education ♣</h2>
+      <ul class="sign-list" id="edu">
+        <li>
+          <p class="cour">Computer Science</p>
+          <p class="uni">@Pedagogical University</p>
+          <p class="date">2014-2018</p>
+          <p class="pass">full course with a diploma</p>
+        </li>
+        <li class="cut">
+          <p class="cour">Bioinformatics</p>
+          <p class="uni">@Jagiellonian University</p>
+          <p class="date">2013</p>
+          <p class="pass">1 semester</p>
+        </li>
+        <li class="cut">
+          <p class="cour">Metallurgy</p>
+          <p class="uni">@University of AGH</p>
+          <p class="date">2012</p>
+          <p class="pass">1 semester</p>
+        </li>
+        <li class="cut">
+          <p class="cour">Cultural Studies</p>
+          <p class="uni">@Jagiellonian University</p>
+          <p class="date">2010-2011</p>
+          <p class="pass">3 semesters</p>
+        </li>
+        <li class="cut">
+          <p class="cour"><abbr="Theoretical Computer Science">TCS</abbr></p>
+          <p class="uni">@Jagiellonian University</p>
+          <p class="date">2010</p>
+          <p class="pass">1 semester</p>
+        </li>
+        <li>
+          <p class="cour">Science Class</p>
+          <p class="uni">@<abbr="Highschool nr.7">VII LO</abbr>, Kraków</p>
+          <p class="date">2007-2010</p>
+          <p class="pass">full course with a diploma</p>
+          </li>
+      </ul><br/>
+        <button id='showall' onclick="myFunction()">Graduated only - On/Off</button>
+          </center>
+    </div>
+    <div class="hobby">
+      <center><h2>♠ Interests ♠</h2></center>
+      <ul class="sign-list">
+        <li id="anima">Animation</li>
+        <li id="death">Death</li>
+        <li id="music">Music</li>
+        <li id="vgame">Video Games</li>
+        <li id="steam">Steampunk</li>
+      </ul>
+    </div>
+
+    <div class="foot">
+      <ul class="info">
+        <li id="loc"><p>Kraków, Poland</p></li>
+        <li id="tel"><p>(+48)577 627 559</p></li>
+        <li id="mail"><p><a href=mailto:021ddb@gmail.com>021ddb@gmail.com</a></p></li>
+        <li id="git"><p><a href="https://github.com/N0star">GitHub/N0star</a></p></li>
+      </ul>
+      <div id="pic">
+        <IMG SRC="https://avatars0.githubusercontent.com/u/64681977"
+          alt="avek" width=100px height=100px>
+      </div>
+    </div>
+
+  <div class="steam" id="grad-front"></div>
+  <script id="lightning">
+    const fg = document.querySelector('#grad-front');
+    const windowWidth = window.innerWidth / 10;
+    const windowHeight = window.innerHeight / 10;
+    fg.addEventListener('mousemove', (e) => {
+      const mouseX = e.clientX / windowWidth;
+      const mouseY = e.clientY / windowHeight;
+      fg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+    });
+  </script>
+  </body>
+</HTML>
