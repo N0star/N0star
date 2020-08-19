@@ -8,13 +8,13 @@ body {
 
 h1{
 	color: #666699;
-	font-family: "courier new";
+	font-family: "consolas";
 	font-weight: bolder;
-	font-size: 42px;
+	font-size: 72px;
 	padding-top: 4px;
-    	padding-right: 10px;
+    	padding-right: 0px;
     	padding-bottom: 4px;
-   	padding-left: 20px;
+   	padding-left: 0px;
  }
 
 h2{
@@ -81,9 +81,10 @@ button {
   color: #131;
 }
 
-div.skillz, div.exped, div.hobby {
+div#skillz, div#exped, div#hobby, div#home {
 
   width: 38%;
+	height: 100%;
  	color: #BBBBFF;
  	font-family: "Simsun";
  	font-weight: bolder;
@@ -91,10 +92,10 @@ div.skillz, div.exped, div.hobby {
  	text-align: center;
  	position: static;
   margin: auto;
-	margin-bottom: 490px;
-	margin-top: 220px;
+	padding-top: 15%;
+	padding-bottom: 50%;
  	}
-	div.hobby ul.sign-list li {
+	div#hobby ul.sign-list li#death,#anima,#music,#steam,#vgame {
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 		line-height: 48px;
 		font-size: 14px;
@@ -105,6 +106,16 @@ div.skillz, div.exped, div.hobby {
 		border-color: black;
 		border-radius: 10px;
 	}
+	div#home b {
+		position: relative;
+		z-index: 1;
+		font-size: 8px;
+	}
+	div#home a:link, a:visited {
+		text-decoration: none;
+		font-size: 16px;
+		color: #500;	}
+	div#home a:hover,a:active { color: #FFF }
 
 div.foot {
 	background-color: #FF69BB;
@@ -139,20 +150,45 @@ div#pic {
 	}
 	div#pic IMG{border-radius: 50px;}
 
-div#topnav{
-	background-color: #FF1493;
+div#cover{
 	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	margin: 0px;
-	height: 1%;
+	z-index: 2;
+	top: -1px;
+	margin: 0;
+	height: 20px;
 	width: 100%;
-	min-width: 296px;
-	border-style: dashed;
-	border-width: thin;
-	border-radius: 0px 0px 15px 15px;
-}
+	}
+div#topnav {display: none;}
+		#topnav ul {
+			display: inherit;
+			list-style-type: none;
+			position: absolute;
+		  padding: 0;
+			width: 20%;
+			min-width: 180px;
+			margin: 0 40%;
+		  overflow: hidden;
+		  background-color: #FF69BB;
+			border-style: dashed;
+			border-width: thin;
+			border-radius: 0px 0px 15px 15px;
+		}
+		#topnav li {
+		  float: left;
+			height: 13px;
+		}
+		#topnav li a {
+			display: block;
+		  color: #111;
+		  text-align: center;
+		  padding: 0px 16px;
+		  text-decoration: none;
+		}
+		#topnav li a:hover {
+		  background-color: #111;
+			color: #CC0;
+	}
+div#cover:hover > div#topnav {display: block;}
 
 div#grad-back {
 	z-index: -1;
@@ -160,6 +196,7 @@ div#grad-back {
 		linear-gradient(to bottom right, rgba(0,0,0,0), rgba(255,255,255,1));
 }
 div#grad-front {
+	pointer-events : none;
 	background-image:
 		linear-gradient(to top left, rgba(255,255,255,1), rgba(0,0,0,0), rgba(255,255,255,1));
 }
@@ -171,11 +208,46 @@ div.steam {
 	width: 130%;
 }
 
+div.pow {
+	background-color: #111;
+	display: none;
+	position: absolute;
+	z-index: 1;
+	border-color: #AA0;
+	border-radius: 1px;
+	border-style: double;
+	margin: auto;
+	color: #FFEDFE;
+	width: 40%;
+	}
+	div.pow ul {
+		list-style: square;
+	}
+	div.pow ul.list li {
+		display: list-item;
+		border-radius: 0px;
+		border-style: none;
+		background: none;
+		margin-top: 20px;
+		border-top: 0px;
+		font-size: 16px;
+		padding: 0px;
+		line-height: 20px;
+		width: auto;
+		height: auto;
+	}
+
  #death { background-image: linear-gradient(#FFF,#000);}
  #music { background-image: linear-gradient(#039,#0B6);}
  #anima { background-image: linear-gradient(#DD0,#E00);}
  #steam { background-image: linear-gradient(#622,#AA0);}
  #vgame { background-image: linear-gradient(#00B,#666);}
+
+ li#death:hover ~ div#death_pow {display: block;}
+ li#music:hover ~ div#music_pow {display: block;}
+ li#anima:hover ~ div#anima_pow {display: block;}
+ li#steam:hover ~ div#steam_pow {display: block;}
+ li#vgame:hover ~ div#vgame_pow {display: block;}
 
 ul#horizontal-list {
 	min-width: 296px;
