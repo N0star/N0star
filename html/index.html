@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<HTML>
+<HTML lang="en">
   <head>
     <meta charset="utf-8"/>
     <title>Your employee</title>
@@ -24,7 +24,7 @@
         <li><a href="#home" title="Start">•</a></li>
         <li><a href="#skillz"  title="Skills">♦</a></li>
         <li><a href="#exped"  title="Past experience">♥  ♣</a></li>
-        <li><a href="#hobby"  title="Hobbies &amp interests">♠</a></li>
+        <li><a href="#hobby"  title="Hobbies &amp; interests">♠</a></li>
       </ul>
     </div></div>
 
@@ -36,8 +36,8 @@
     </div>
 
     <div id="skillz">
-      <center><h2>♦ Skill$et ♦</h2></center>
-      <ul id="horizontal-list">
+      <h2>♦ Skill$et ♦</h2>
+      <ul class="horizontal-list">
         <li class="tech"> MySQL</li>
         <li class="tech"> HTML</li>
         <li class="tech"> CSS</li>
@@ -52,15 +52,15 @@
         <li class="lang"> R</li>
         <li class="lang"> JavaScript</li>
         <li class="lang"> GML</li>
-        <li class="soft" title="like GIMP or Clip Studio Paint"> Graphics&nbspSoftware</li>
-        <li class="soft" title="MS Office, Open Office, etc."> Office&nbspSoftware</li>
+        <li class="soft" title="like GIMP or Clip Studio Paint"> Graphics&nbsp;Software</li>
+        <li class="soft" title="MS Office, Open Office, etc."> Office&nbsp;Software</li>
       </ul>
       <hr class="skillz" />
-      <ul id="horizontal-list">
+      <ul class="horizontal-list">
         <li class="os"> MS Windows</li>
         <li class="os"> GNU/Linux</li>
       </ul><hr class="skillz" />
-      <ul id="horizontal-list">
+      <ul class="horizontal-list">
         <li class="lang"> English</li>
         <li class="lang"> Polski</li>
         <li class="lang"> Руский</li>
@@ -70,7 +70,7 @@
       </ul>
     </div>
     <div id="exped">
-      <center><h2>♥ Past Jobs ♥</h2>
+      <h2>♥ Past Jobs ♥</h2>
       <ul class="sign-list" id="jobs">
         <li>
           <p class="comp">@Kerber Group</p>
@@ -81,8 +81,8 @@
           <p class="pos">multitansking position</p>
           <p class="date">temporarily in '15,'19,'20.</p>
           </li>
-      </ul></center><br/>
-      <center><h2>♣ Education ♣</h2>
+      </ul><br/>
+      <h2>♣ Education ♣</h2>
       <ul class="sign-list" id="edu">
         <li>
           <p class="cour">Computer Science</p>
@@ -109,23 +109,22 @@
           <p class="pass">3 semesters</p>
         </li>
         <li class="cut">
-          <p class="cour"><abbr="Theoretical Computer Science">TCS</abbr></p>
+          <p class="cour"><abbr title="Theoretical Computer Science">TCS</abbr></p>
           <p class="uni">@Jagiellonian University</p>
           <p class="date">2010</p>
           <p class="pass">1 semester</p>
         </li>
         <li>
           <p class="cour">Science Class</p>
-          <p class="uni">@<abbr="Highschool nr.7">VII LO</abbr>, Kraków</p>
+          <p class="uni">@<abbr title="Highschool nr.7">VII LO</abbr>, Kraków</p>
           <p class="date">2007-2010</p>
           <p class="pass">full course with a diploma</p>
           </li>
       </ul><br/>
         <button id='showall' onclick="myFunction()">Graduated only - On/Off</button>
-          </center>
     </div>
     <div id="hobby">
-      <center><h2>♠ Interests ♠</h2></center>
+      <h2>♠ Interests ♠</h2>
       <ul class="sign-list" id="hobbies">
         <li id="anima">Animation</li>
           <div class="pow" id="anima_pow">
@@ -166,9 +165,9 @@
             <ul class="list">
               <li>cRPGs, like Neverwinter Nights, Vampire the Masquerade - Bloodlines </li>
               <li>2d platformers, like Rayman, Lomax, Cave Story, N, Captain Claw</li>
-              <li>3d platformers, like Crash, Croc, Spyro, Ratchet &amp Clank, Kao</li>
+              <li>3d platformers, like Crash, Croc, Spyro, Ratchet &amp; Clank, Kao</li>
               <li>Action games, like Soul Reaver, Dark Messiah, Prince of Persia</li>
-              <li>Strategies, like Warcraft, Desperados, Heroes of Might &amp Magic III</li>
+              <li>Strategies, like Warcraft, Desperados, Heroes of Might &amp; Magic III</li>
               <li>FPS, like Deus Ex, System Shock 2, Team Fortress 2</li>
               <li>Classic adveture games, like Dreamfall: the longest Journey, Syberia</li>
               <li>And many, many more, anything with great gameplay or story would do</li>
@@ -200,15 +199,16 @@
       </ul>
       <div id="pic">
         <IMG SRC="https://avatars0.githubusercontent.com/u/64681977"
-          alt="avek" width=100px height=100px>
+          alt="avek" width=100 height=100>
       </div>
     </div>
 
-  <div class="steam" id="grad-front"></div>
+  <div class="layer" id="grad-back"></div>
+    <div class="layer" id="grad-front"></div>
   <script id="lightning">
     const fg = document.querySelector('#grad-front');
-    const windowWidth = window.innerWidth / 10;
-    const windowHeight = window.innerHeight / 10;
+    const windowWidth = window.innerWidth / 20;
+    const windowHeight = window.innerHeight / 20;
     fg.addEventListener('mousemove', (e) => {
       const mouseX = e.clientX / windowWidth;
       const mouseY = e.clientY / windowHeight;
