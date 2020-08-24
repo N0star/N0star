@@ -111,7 +111,8 @@ div#skillz, div#exped, div#hobby, div#home {
 	div#home b {
 		position: relative;
 		z-index: 1;
-		font-size: 8px;
+		color: #6666AA;
+		font-size: 10px;
 	}
 	div#home a:link, a:visited {
 		text-decoration: none;
